@@ -4,10 +4,12 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Loventa — сайты-подарки</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -16,7 +18,6 @@ box-sizing:border-box;
 
 :root{
 --bg:#0d0711;
---card:#17101d;
 --pink:#ff4f93;
 --orange:#ffb347;
 --text:#ffffff;
@@ -46,7 +47,7 @@ padding:0 20px;
 }
 
 section{
-padding:110px 0;
+padding:100px 0;
 }
 
 .hero{
@@ -56,29 +57,6 @@ align-items:center;
 justify-content:center;
 text-align:center;
 position:relative;
-}
-
-.hero::before{
-content:'';
-position:absolute;
-width:700px;
-height:700px;
-background:radial-gradient(circle,
-rgba(255,79,147,.25),transparent 70%);
-filter:blur(50px);
-z-index:-1;
-}
-
-.badge{
-display:inline-flex;
-padding:12px 20px;
-border-radius:999px;
-background:rgba(255,255,255,.05);
-border:1px solid rgba(255,255,255,.08);
-backdrop-filter:blur(10px);
-margin-bottom:30px;
-font-size:14px;
-color:#ffd6e7;
 }
 
 .hero h1{
@@ -102,6 +80,16 @@ font-size:20px;
 line-height:1.8;
 color:var(--muted);
 margin-bottom:40px;
+}
+
+.badge{
+display:inline-flex;
+padding:12px 20px;
+border-radius:999px;
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.08);
+margin-bottom:30px;
+color:#ffd6e7;
 }
 
 .hero-info{
@@ -140,10 +128,6 @@ color:white;
 box-shadow:0 15px 40px rgba(255,79,147,.35);
 }
 
-.btn-primary:hover{
-transform:translateY(-5px);
-}
-
 .btn-secondary{
 background:rgba(255,255,255,.05);
 border:1px solid rgba(255,255,255,.08);
@@ -179,7 +163,6 @@ background:rgba(255,255,255,.04);
 border:1px solid rgba(255,255,255,.08);
 border-radius:32px;
 overflow:hidden;
-backdrop-filter:blur(14px);
 transition:.4s;
 }
 
@@ -191,15 +174,6 @@ transform:translateY(-10px);
 height:250px;
 background-size:cover;
 background-position:center;
-position:relative;
-}
-
-.card-image::after{
-content:'';
-position:absolute;
-inset:0;
-background:linear-gradient(to top,
-rgba(13,7,17,.9),transparent 60%);
 }
 
 .card-content{
@@ -228,10 +202,6 @@ line-height:1.8;
 margin-bottom:25px;
 }
 
-.features{
-margin-bottom:25px;
-}
-
 .features div{
 margin-bottom:12px;
 }
@@ -240,7 +210,7 @@ margin-bottom:12px;
 padding:18px;
 background:rgba(255,255,255,.05);
 border-radius:20px;
-margin-bottom:25px;
+margin:25px 0;
 }
 
 .price-box strong{
@@ -272,95 +242,6 @@ border:1px solid rgba(255,255,255,.08);
 color:white;
 }
 
-.includes{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-}
-
-.include-card{
-padding:35px;
-background:rgba(255,255,255,.04);
-border-radius:30px;
-text-align:center;
-border:1px solid rgba(255,255,255,.08);
-}
-
-.include-card div{
-font-size:50px;
-margin-bottom:15px;
-}
-
-.include-card h4{
-font-size:24px;
-margin-bottom:10px;
-}
-
-.include-card p{
-color:var(--muted);
-line-height:1.8;
-}
-
-.demo-section{
-padding-top:20px;
-}
-
-.demo-box{
-border-radius:40px;
-overflow:hidden;
-background:rgba(255,255,255,.04);
-border:1px solid rgba(255,255,255,.08);
-}
-
-.demo-hero{
-height:420px;
-background-size:cover;
-background-position:center;
-position:relative;
-display:flex;
-align-items:end;
-padding:50px;
-}
-
-.demo-hero::before{
-content:'';
-position:absolute;
-inset:0;
-background:linear-gradient(to top,
-rgba(13,7,17,.95),transparent 70%);
-}
-
-.demo-content{
-position:relative;
-z-index:2;
-}
-
-.demo-content h2{
-font-family:'Cormorant Garamond',serif;
-font-size:70px;
-margin-bottom:15px;
-}
-
-.demo-content p{
-max-width:700px;
-line-height:1.8;
-color:#e7dfe7;
-}
-
-.demo-gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-padding:35px;
-}
-
-.demo-gallery div{
-height:260px;
-border-radius:24px;
-background-size:cover;
-background-position:center;
-}
-
 .form-box{
 max-width:850px;
 margin:auto;
@@ -368,7 +249,6 @@ padding:50px;
 background:rgba(255,255,255,.05);
 border:1px solid rgba(255,255,255,.08);
 border-radius:40px;
-backdrop-filter:blur(14px);
 }
 
 .form-grid{
@@ -395,7 +275,7 @@ outline:none;
 textarea{
 min-height:160px;
 resize:vertical;
-margin-bottom:20px;
+margin:20px 0;
 }
 
 .submit-btn{
@@ -408,23 +288,10 @@ color:white;
 font-size:18px;
 font-weight:700;
 cursor:pointer;
-box-shadow:0 15px 40px rgba(255,79,147,.35);
-}
-
-.contacts{
-text-align:center;
-}
-
-.contact-buttons{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-margin-top:40px;
 }
 
 footer{
-padding:40px 20px;
+padding:40px;
 text-align:center;
 color:#8d7d8d;
 }
@@ -444,16 +311,10 @@ font-size:30px;
 text-decoration:none;
 box-shadow:0 15px 40px rgba(37,211,102,.45);
 z-index:999;
-animation:pulse 2s infinite;
-}
-
-@keyframes pulse{
-0%{transform:scale(1)}
-50%{transform:scale(1.08)}
-100%{transform:scale(1)}
 }
 
 @media(max-width:768px){
+
 .hero p{
 font-size:17px;
 }
@@ -466,13 +327,6 @@ grid-template-columns:1fr;
 flex-direction:column;
 }
 
-.demo-content h2{
-font-size:45px;
-}
-
-.form-box{
-padding:30px;
-}
 }
 
 </style>
@@ -594,15 +448,6 @@ style="background-image:url('https://images.unsplash.com/photo-1464349095431-e9a
 До 10 фотографий включено
 </div>
 
-<div class="card-buttons">
-<a href="#birthday-demo" class="small-btn demo-btn">
-Демо
-</a>
-
-<a href="#order" class="small-btn order-btn">
-Заказать
-</a>
-</div>
 </div>
 </div>
 
@@ -633,127 +478,7 @@ style="background-image:url('https://images.unsplash.com/photo-1516589178581-6cd
 До 10 фотографий включено
 </div>
 
-<div class="card-buttons">
-<a href="#love-demo" class="small-btn demo-btn">
-Демо
-</a>
-
-<a href="#order" class="small-btn order-btn">
-Заказать
-</a>
 </div>
-</div>
-</div>
-
-</div>
-</div>
-</section>
-
-<section>
-<div class="container">
-
-<div class="section-title">
-<span>ЧТО ВХОДИТ</span>
-<h2>Что вы получаете</h2>
-</div>
-
-<div class="includes">
-
-<div class="include-card">
-<div>📸</div>
-<h4>До 10 фото</h4>
-<p>
-Можно добавить фотографии,
-галерею и воспоминания.
-</p>
-</div>
-
-<div class="include-card">
-<div>🎵</div>
-<h4>Музыка</h4>
-<p>
-Добавляем любимую музыку
-или романтический трек.
-</p>
-</div>
-
-<div class="include-card">
-<div>✨</div>
-<h4>Анимации</h4>
-<p>
-Glow эффекты и плавные
-современные переходы.
-</p>
-</div>
-
-<div class="include-card">
-<div>📱</div>
-<h4>Mobile версия</h4>
-<p>
-Сайт идеально выглядит
-на телефоне и ПК.
-</p>
-</div>
-
-</div>
-</div>
-</section>
-
-<section id="birthday-demo" class="demo-section">
-<div class="container">
-<div class="demo-box">
-
-<div class="demo-hero"
-style="background-image:url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=1600&auto=format&fit=crop')">
-
-<div class="demo-content">
-<div class="tag">🎂 Birthday Demo</div>
-<h2>Happy Birthday ✨</h2>
-
-<p>
-Праздничный сайт с фотографиями,
-яркими эффектами и поздравлением.
-</p>
-</div>
-</div>
-
-<div class="demo-gallery">
-<div style="background-image:url('https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=1200&auto=format&fit=crop')"></div>
-
-<div style="background-image:url('https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1200&auto=format&fit=crop')"></div>
-
-<div style="background-image:url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1200&auto=format&fit=crop')"></div>
-</div>
-
-</div>
-</div>
-</section>
-
-<section id="love-demo" class="demo-section">
-<div class="container">
-<div class="demo-box">
-
-<div class="demo-hero"
-style="background-image:url('https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=1600&auto=format&fit=crop')">
-
-<div class="demo-content">
-<div class="tag">❤️ Love Story Demo</div>
-<h2>Our Love Story</h2>
-
-<p>
-Романтический сайт-признание
-с атмосферой, музыкой
-и историей отношений.
-</p>
-</div>
-</div>
-
-<div class="demo-gallery">
-<div style="background-image:url('https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=1200&auto=format&fit=crop')"></div>
-
-<div style="background-image:url('https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop')"></div>
-
-<div style="background-image:url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop')"></div>
 </div>
 
 </div>
@@ -783,8 +508,6 @@ style="background-image:url('https://images.unsplash.com/photo-1518199266791-537
 <option>❤️ Love Story</option>
 </select>
 
-<br><br>
-
 <textarea id="message"
 placeholder="Опишите пожелания для сайта"></textarea>
 
@@ -794,33 +517,6 @@ onclick="sendWhatsApp()">
 </button>
 
 </div>
-</div>
-</section>
-
-<section class="contacts">
-<div class="container">
-
-<div class="section-title">
-<span>КОНТАКТЫ</span>
-<h2>Связаться напрямую</h2>
-</div>
-
-<div class="contact-buttons">
-
-<a href="https://wa.me/77066524241"
-class="btn btn-primary"
-target="_blank">
-WhatsApp
-</a>
-
-<a href="https://t.me/Kst686"
-class="btn btn-secondary"
-target="_blank">
-Telegram
-</a>
-
-</div>
-
 </div>
 </section>
 
