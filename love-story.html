@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Love Story</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Jost',sans-serif;
+background:
+radial-gradient(circle at top,
+rgba(255,79,147,.2),transparent 35%),
+#0b0610;
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px 20px;
+position:relative;
+}
+
+.hero::before{
+content:'❤️';
+position:absolute;
+top:70px;
+left:10%;
+font-size:90px;
+opacity:.2;
+animation:float 5s ease-in-out infinite;
+}
+
+.hero::after{
+content:'✨';
+position:absolute;
+bottom:70px;
+right:10%;
+font-size:90px;
+opacity:.2;
+animation:float 6s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-20px)}
+100%{transform:translateY(0)}
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+}
+
+h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(60px,10vw,130px);
+line-height:1;
+margin-bottom:25px;
+font-weight:500;
+}
+
+.gradient{
+background:linear-gradient(135deg,#ff4f93,#ffb347);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+p{
+font-size:22px;
+line-height:1.8;
+max-width:800px;
+margin:auto;
+margin-bottom:40px;
+color:#ddd;
+}
+
+.btn{
+display:inline-block;
+padding:18px 35px;
+background:linear-gradient(135deg,#ff4f93,#ffb347);
+color:white;
+font-weight:700;
+border-radius:18px;
+text-decoration:none;
+font-size:18px;
+box-shadow:0 15px 40px rgba(255,79,147,.3);
+}
+
+.story{
+margin-top:100px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.08);
+border-radius:35px;
+overflow:hidden;
+backdrop-filter:blur(12px);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.photo{
+height:320px;
+background-size:cover;
+background-position:center;
+}
+
+.content{
+padding:30px;
+}
+
+.content h3{
+font-size:34px;
+font-family:'Cormorant Garamond',serif;
+margin-bottom:15px;
+}
+
+.content p{
+font-size:17px;
+line-height:1.8;
+color:#ccc;
+margin:0;
+}
+
+.timeline{
+margin-top:100px;
+padding:40px;
+border-radius:40px;
+background:rgba(255,255,255,.04);
+border:1px solid rgba(255,255,255,.08);
+}
+
+.timeline h2{
+font-family:'Cormorant Garamond',serif;
+font-size:60px;
+margin-bottom:40px;
+text-align:center;
+}
+
+.line{
+margin-bottom:30px;
+padding-left:30px;
+border-left:2px solid rgba(255,79,147,.5);
+}
+
+.line h4{
+font-size:22px;
+margin-bottom:10px;
+}
+
+.line p{
+font-size:16px;
+margin:0;
+color:#ccc;
+}
+
+@media(max-width:768px){
+
+p{
+font-size:18px;
+}
+
+.timeline h2{
+font-size:42px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<section class="hero">
+
+<div class="container">
+
+<h1>
+<span class="gradient">Our</span><br>
+Love Story
+</h1>
+
+<p>
+Романтический сайт-признание
+с вашей историей, фотографиями,
+музыкой и красивыми анимациями.
+Идеальный цифровой подарок
+для любимого человека.
+</p>
+
+<a href="index.html" class="btn">
+← Назад
+</a>
+
+<div class="story">
+
+<div class="card">
+
+<div class="photo"
+style="background-image:url('https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=1200&auto=format&fit=crop')">
+</div>
+
+<div class="content">
+<h3>Первое знакомство</h3>
+
+<p>
+Можно красиво рассказать
+историю знакомства,
+добавить воспоминания
+и любимые моменты.
+</p>
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="photo"
+style="background-image:url('https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop')">
+</div>
+
+<div class="content">
+<h3>Лучшие моменты</h3>
+
+<p>
+Фотографии, музыка,
+анимации и атмосфера
+настоящей love story.
+</p>
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="photo"
+style="background-image:url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop')">
+</div>
+
+<div class="content">
+<h3>Признание в любви</h3>
+
+<p>
+Можно добавить
+персональный текст,
+послание и эмоции.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="timeline">
+
+<h2>История отношений</h2>
+
+<div class="line">
+<h4>💫 Первая встреча</h4>
+<p>Начало вашей истории.</p>
+</div>
+
+<div class="line">
+<h4>❤️ Первое свидание</h4>
+<p>Самые тёплые воспоминания.</p>
+</div>
+
+<div class="line">
+<h4>✨ Ваши моменты</h4>
+<p>Фотографии, поездки и эмоции.</p>
+</div>
+
+<div class="line">
+<h4>💍 Будущее вместе</h4>
+<p>История продолжается.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
